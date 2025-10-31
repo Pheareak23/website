@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table and border</title>
+    <style>
+        table , th , td {
+            border: 1px solid black; 
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+       th{
+        background-color: purple;
+       }
+       td{
+        background-color:skyblue;
+       }
+    </style>
+</head>
+<body> 
+    <h2 style="color:green;">This Is List Name</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Position</th>
+            <th>Salarry</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Kairi</td>
+            <td>Male</td>
+            <td colspan="2">IT</td>
+        <!-- <td>2000$</td> -->
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td rowspan="2">Kaltzy</td>
+            <td>Male</td>
+            <td >Teacher</td>
+            <td>1500$</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+          <!--<td>Kelar</td> -->
+            <td>Male</td>
+            <td>Gamer</td>
+            <td>1000$</td>
+        </tr>
+    </table>
+</body>
+</html>

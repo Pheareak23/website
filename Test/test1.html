@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test</title>
+    <style>
+         body {
+            background-color: skyblue;
+            display: flex;
+            justify-content: center; /* មធ្យមផ្ដេក */
+            align-items: center;     /* មធ្យមបញ្ឈរ */
+            height: 100vh;           /* ឲ្យមានកម្ពស់ស្មើទំព័រ */
+            margin: 0;
+        }
+        .number{
+            background-color: green;
+            color:aliceblue;
+        }
+        .box{
+            background-color: palevioletred;
+        }
+        form{
+            width: 310px;
+        }
+        #text{
+            border: 2px solid black;
+        }
+      
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <div id="B slanh Oun"></div>
+    <form action="form" >
+    <fieldset class="box" id="text">
+        <legend>Input your Information</legend>
+
+       First Name: <input type="text"><br><br>
+       last Name: <input type="text"><br><br>
+        E-mail: <input type="email"><br><br>
+
+        <input type="radio" name="a">Male <br>
+        <input type="radio" name="a">Female <br><br>     
+
+         <input type="button" value="Submit" class="number" onclick="document.getElementById('B slanh Oun').innerHTML='This is form is succes'">
+        <input type="reset" >
+
+       </form>
+    </fieldset>
+</body>
+</html>

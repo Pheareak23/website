@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Design</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body{
+            background: url(/picture/p.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .header{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            background:transparent ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: index 100;
+        }
+
+        .logo{
+            font-size: 25px;
+            color:rgb(16, 5, 88);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a{
+            font-size: 18px;
+            color: rgb(16, 5, 88);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+           
+        }
+
+        .navbar a:hover,
+        .navbar a.active{
+            color: #f9f7f7;
+            background: #12045a;
+            border: 10px solid #12045a;
+            border-radius: 15px;
+            
+        }
+
+        .home{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .home-content{
+            max-width: 350px;
+        }
+
+        .home-content h1{
+            font-size: 70px;
+            font-weight: 700;
+            color:rgb(2, 2, 58)
+        }
+
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: rgb(6, 135, 135);
+        }
+
+        .home-content p{
+            font-size: 18px;
+            margin: 40px 0 20px;
+            color: #181fe3;
+        }
+
+        .home-content.btn-box{
+            display: flex;
+            justify-content: space-between;
+            width: 345px;
+            height: 50px;
+        }
+
+        .btn-box a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 100%;        
+            background: #00abf0;
+            border: 10px solid #00abf0;
+            border-radius: 15px;
+            font-size: 20px;
+            color:#e2e8ed;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 1px;   
+        }
+
+        .home-sci{
+            position: absolute;
+            bottom: 40px;
+            width:170px;
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .home-sci a{
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #12045a;
+            border-radius: 50%;
+            font-size: 20px;
+            color:#12045a;
+            text-decoration: none;
+        }
+        .home-sci a:hover{
+            background: #00abf0;
+            border: 10px solid #00abf0;
+            border-radius: 50%
+        }
+    </style>
+</head>
+<body>
+    <form class="header">
+    <a href="#" class="logo">LOGO</a> 
+
+    <div class="navbar">
+        <a href="#" >Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+        <a href="#" class="active">GET STARTED</a>
+    </div>
+    </form>
+    <form class=" home">
+        <div class="home-content">
+            <h1>Web<br>Design</h1>
+            <h3>LANDING PAGE</h3>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia harum perferendis nesciunt consequuntur eaque exercitationem a possimus? Dolor, repudiandae, nesciunt itaque, ducimus recusandae dicta error modi voluptatum impedit pariatur velit?</P>
+
+            <div class="btn-box">
+                <a href="#">learn mores</a>
+            </div>
+
+        </div>
+        <div class="home-sci">
+            <a href="https://web.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://x.com/"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>test2</title>
+    <style>
+        body{
+            background-color:skyblue ;
+            margin: 200px;
+            justify-content: center; 
+            align-items: center;  
+            display: flex;  
+        }
+        
+        #form{
+            border: 2px solid black;
+            width: 320px;
+            height: 320px;
+            background-color:palevioletred;
+            border-collapse: collapse;
+            border-radius: 10px;
+
+        }
+        #color{
+            border: 1px solid black;
+            color: black ;
+            padding:5px ;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            
+        }
+        .text{
+            text-align: center ;
+        }
+        .num{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="form">
+        <h1 class="text"><u>Login</u></h1>
+       <form>
+        <label for="name">Name:</label>
+        <input type="text" id="color" placeholder="E-mail"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="color" placeholder="Password"><br><br>
+
+        <input type="button" value="Submit" class="num">
+
+        <select style="background-color:white; color: black;">
+            <option value="">Pinterest</option>
+            <option value="">Facebook</option>
+            <option value="">Tik Tok</option>
+            <option value="">Twitter</option>
+        </select>
+        
+       </form>
+    </fieldset>
+    
+</body>
+</html>

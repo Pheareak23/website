@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>test3</title>
+    <style>
+        body{
+           background: url(/picture/sky.jpg.jpg) no-repeat center center fixed; 
+            justify-content: center; 
+            align-items: center;   
+            background-size: cover;
+            overflow: hidden;
+            min-height: 100vh;   
+            margin:500px;
+
+        }
+         .Tab-form{
+            text-align: center;
+            color: aliceblue;
+            padding: 20px;
+        }
+        .container {
+            background:url(/picture/sky.jpg.jpg) no-repeat center center fixed;
+            background-size: cover;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+            overflow:hidden;
+            padding: 25px;
+            width: 320px;
+        }
+         .tabs {
+            display: flex;
+            border-bottom: 1px solid #161416;
+        }
+        
+        .tab {
+            flex: 1 ;
+            text-align: center;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            color:black;
+           
+        }
+        
+        .tab.active {
+            color: #1a0285;
+        }
+                 
+        label{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        #width{
+            width: 320px;
+            height: 320px;
+            background-color:aquamarine;
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        .text{
+           width: 320px;
+           background-color:blueviolet;
+           color: aliceblue; 
+           height: 25px;
+        }
+        .forgot-password {
+            color:blue;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center; 
+            align-items: center;  
+            display: flex;  
+        }
+        /* .social-icons {
+            display: flex;
+            justify-content: center;
+
+        }
+        .social-icons{
+           width: 320px;
+           height: 25px;
+           justify-content: center; 
+           align-items: center;  
+           display: flex;
+           
+        }*/
+        .social-buttons {
+          display: flex;
+          gap: 10px;  }
+        .social-buttons a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .twitter {
+            background: #1DA1F2;
+        }
+        .facebook {
+           background: #3b5998;
+        }
+       .social-buttons img {
+           width: 20px;
+           height: 20px;
+           margin-right: 8px;
+        }
+    
+    </style>
+</head>
+<body >
+    <div class="Tab-form">
+        <h1>Flat Tab Form</h1>
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" data-tab="signin">Sign In</div>
+            <div class="tab" data-tab="signup">Sign Up</div>
+        </div><br><br>
+    <form class="backg">
+        <label for="email">E-mail</label>
+        <input type="text"  style="width: 320px; height: 25px;" placeholder="E-mail"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" style="width: 320px; height: 25px;" placeholder="Password"><br><br>
+
+        <input type="checkbox" > Remember me <br><br>
+
+        <input type="button" class="text" value="Sign In"><br><br>
+            
+         <a href="" class="forgot-password" >Forgot Your Password ?</a><br><br>
+        <!-- <div class="social-icons">
+                    <form >
+                       <input type="button" style="background-color:skyblue; color:aliceblue; width: 160px;height: 25px;" value="Sign In Twitter">
+                    </form>
+                    <form >
+                        <input type="button" style="background-color:royalblue; color: aliceblue; width: 160px; height: 25px;" value="Sign In Facebook">
+                    </form>
+                </div> -->
+            <div class="social-buttons">
+            <a href="#" class="twitter">
+                <img src="/picture/twitter.jpg" alt="Twitter"> Sign in with Twitter
+            </a>
+            <a href="#" class="facebook">
+                <img src="/picture/facebook.jpg" alt="Facebook"> Sign in with Facebook
+            </a>
+        </div>
+     </form> 
+     
+</body>
+</html>

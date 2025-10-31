@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title >🍔 Best Burger In The Wrold</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+
+        body{
+           
+            background: #f4f4f4;
+        }
+
+        .header{
+            background: #141413;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 20px 8%;
+            background:transparent ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: index 100;
+        }
+
+        .food{
+            font-size: 25px;
+            color:rgb(244, 203, 38);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .food{
+             position:relative;
+        }
+
+        .navbar{
+            position:relative;
+            font-weight: 500;
+            margin-left: 35px;
+    
+        }
+        
+        .navbar a{
+            font-size: 18px;
+            color: rgb(240, 237, 236);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+           
+        }
+
+        .navbar a:hover{
+            color: #f9f9f7;
+            background: #efa507;
+            border: 10px solid #efa507;
+            border-radius: 15px;
+            
+        }
+        
+         .home{
+            height: 100vh;
+            background: url(/picture/besttburger2.jpg) no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;          
+            align-items: center;
+            padding: 0 10%;
+            
+        }
+
+        .home-content{
+            max-width: 350px;
+        }
+
+        .home-content h1{
+            font-size: 50px;
+            font-weight: 700;
+            color:rgb(247, 200, 43)
+        }
+
+        .home-content p{
+            font-size: 18px;
+            
+            color: #ededf2;
+        }
+         .home-content.btn-box{
+            display: flex;
+            justify-content: space-between;
+            width: 345px;
+            height: 50px;
+        }
+         .btn-box a{
+            display: inline-flex;
+            justify-content:center ;
+            align-items: center;
+            width: 150px;
+            height: 100%;
+            background: #ffffff;
+            border: 10px solid #ffffff;
+            border-radius: 25px;
+            font-size: 20px;
+            color: #141413;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            
+        }
+        .btn-box a:hover{
+            color: #ede7e7;
+            background: #efa507;
+            border: 10px solid #efa507;
+            border-radius: 25px;
+        }
+        .heading{
+            text-align: center;
+            font-size: 3rem;
+            color :#333;
+            padding: 0rem;
+            margin: 2rem 0;
+
+        }
+        
+        .deals-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .deal-card {
+            background: #e69500;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .deal-card:hover {
+            transform: translateY(-5px);
+        }
+        .deal-card img { 
+            width: 100%;
+            height: 230px;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+        }
+        .deal-card h3 {
+            margin: 10px 0;
+        }
+        .price{
+            background: black;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .image{
+            padding: 70px;
+        }
+        .footer .box-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:2.5rem;
+            background: #cfcccc;
+        }
+        .footer .box-container .box{
+            padding: 10px;
+            margin: 1px;
+           
+        }
+        .footer .box-container .box h3{
+            color: #333;
+            font-size: 1rem;
+            padding: 1.5rem 0;
+        }
+        .footer .box-container .box a{
+           display: black;
+           color: #666;
+           font-size: 15px;
+           padding: 15px 0;
+           text-decoration: none;
+           
+        }
+         .footer .box-container .box a:hover{
+            color: var(--pink);
+            text-decoration: underline;
+        }
+        .footer .box-container .box h2{
+            padding: 10px;
+            margin: 1px;
+            font-family: bold;
+            color: rgb(3, 97, 3);
+        }
+        .footer .box-container .box .option{
+            padding: 8px;
+            margin: 1px;
+            margin-top: 20%;
+        }
+
+        .footer-social{
+           padding: 2px;
+           text-decoration: none;
+
+        }
+
+        .footer-social a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            color: #0c0c0c;
+            background: #f5f3f3;
+            border-radius: 50%;
+            
+        }
+        .footer .credit{
+            background: #858386;
+            padding: 2rem;
+        }
+        .footer .credit .term{
+            font-family:bold;
+            color: #e6e4e4;
+            text-decoration: none;
+        }
+        .footer .credit .graby{
+            justify-content: center;
+            text-align: center;
+            padding: 300px;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            text-decoration: none;
+            font-family: bold;
+            color: #e6e4e4;
+        }
+       
+        </style>
+       
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="food" id="food">🍔Burgur</a>
+        
+        <nav class="navbar" id="navbar">
+            <a href="#" >Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+            <a href="#" >GET STARTED</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Best Burger</h1>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia harum perferendis nesciunt consequuntur eaque exercitationem a possimus? Dolor, repudiandae, nesciunt itaque, ducimus recusandae dicta error modi voluptatum impedit pariatur velit?</P>
+
+            <div class="btn-box">
+                <a href="#product" >Menu</a>
+            </div>
+        </div>
+    </section> 
+
+    <!--Product-->
+    <section class="product" id="product">
+
+        <h1 class="heading">Deals Of The Day</h1>
+
+        <div class="deals-container">
+            <!-- Card1 -->
+        <div class="deal-card">
+            <img src="/picture/b1.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$16.50</div>
+        </div>
+
+             <!-- Card 2 -->
+        <div class="deal-card">
+            <img src="/picture/b2.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$18.99</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="deal-card">
+            <img src="/picture/b3.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$12.50</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="deal-card">
+            <img src="/picture/b4.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$15.90</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="deal-card">
+            <img src="/picture/b5.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$10.99</div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="deal-card">
+            <img src="/picture/b6.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$17.80</div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="deal-card">
+            <img src="/picture/b7.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$14.05</div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="deal-card">
+            <img src="/picture/b8.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <div class="price">$19.99</div>
+        </div>
+    </div> 
+    </section>
+
+    <section>
+        <div class="image">
+            <img src="/picture/image.jpg.jpg" class="img" alt="">
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h2 >GrabFood</h2>
+                <h3>Forward Togetter</h3>
+                <a href="">TK Central,5th Floor</a><br>
+                <a href="">street 289, Toul Kork, Phnom Penh</a><br>
+                <div class="footer-social">
+                    <h3>Follow us and keep Updated</h3>
+                    <a href="https://web.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                </div>
+                <select class="option">
+                    <option value="">Cambodia</option>
+                </select>
+            </div>
+            <div class="box">
+
+                <h3>About</h3>
+                <a href="#">About Us</a><br><br>
+                <a href="#">Inside Gran</a><br><br>
+                <a href="#">Investor Relations</a><br><br>
+                <a href="#">Locations</a><br><br>
+                <a href="#">Trust & Satety</a><br><br>
+                <a href="#">Impact</a ><br><br>
+                <a href="#">Newsroom</a><br><br>
+                <a href="#">Careers</a ><br><br>
+                <a href="#">GrabForGood Fund</a><br><br>
+            </div>
+
+            <div class="box">
+
+                <h3>Consumer</h3>
+                <a href="#">Blog</a><br><br>
+                <a href="#">Transport</a><br><br>
+                <a href="#">GrabMart</a><br><br>
+                <a href="#">GrabFood</a><br><br>
+                <a href="#">GrabRewards</a><br><br>
+            </div>
+
+            <div class="box">
+
+                <h3>Driver</h3>
+                <a href="#">What's New</a><br><br>
+                <a href="#">Transport</a><br><br>
+                <a href="#">Driver Center</a><br><br>
+            </div>
+
+            <div class="box">
+
+                <h3>Merchant</h3>
+                <a href="#">Partner with Us</a><br><br>
+            </div>
+
+            <div class="box">
+
+                <h3>Enterprise</h3>
+                <a href="#">Grab For Business</a><br><br>
+                <a href="#">GrabExpress</a><br><br>
+                <a href="#">GrabMaps</a><br><br>
+            </div>
+
+            <div class="box">
+
+                <h3>Quick Links</h3>
+                <a href="#">Help Center</a><br><br>
+                <a href="#">Sign Up us a Driver</a><br><br>
+                <a href="#">Developer Portal</a><br>
+            </div>
+        </div>
+        <div class="credit">
+            <a href="" class="term">Terms and Policies • Privacy Notice</a>
+            <a href="" class="graby"> © Grab 2010-2025</i></a>
+            <a href="" class="store-button">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- JavaScript for scroll up/down -->
+    <script>
+    let prevScroll = window.pageYOffset;
+    const navbar = document.getElementById("navbar");
+    const food = document.getElementById("food")
+
+    window.onscroll = function () {
+      let currentScroll = window.pageYOffset;
+      if (prevScroll < currentScroll) {
+        // scrolling down → hide navbar
+        navbar.style.top = "-80px";
+        food.style.top = "-80px";
+      } else {
+        // scrolling up → show navbar
+        navbar.style.top = "0";
+        food.style.top = "0";
+      }
+      prevScroll = currentScroll;
+    }
+  </script>
+    
+</body>
+</html>
